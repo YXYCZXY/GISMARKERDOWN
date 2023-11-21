@@ -1,0 +1,36 @@
+{
+  "name": "learning-vue3",
+  "version": "1.0.0",
+  "description": "A starting learning tutorial on Vue 3.0 + TypeScript, suitable for complete Vue novices and Vue 2.0 veterans, incorporating some of my own practical experience on the basis of official documents.",
+  "author": "chengpeiquan",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && gh-pages -d dist",
+    "backup": "git add . && git commit -m \"chore: backup\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/YXYCZXY/gismarkdown/-/tree/gh-pages"
+  },
+  "keywords": [
+    "vue3",
+    "vue",
+    "TypeScript",
+    "ts"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/YXYCZXY/gismarkdown/-/tree/gh-pages/issues"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.36",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.35",
+    "gitalk": "^1.7.2",
+    "md5": "^2.3.0",
+    "vite-plugin-banner": "^0.2.0",
+    "vue-baidu-analytics": "^2.2.0",
+    "vuepress": "^2.0.0-beta.35"
+  }
+}
